@@ -2,9 +2,9 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/tandil-guide-2/',
+  base: '',
   build: {
-    outDir: 'docs'
+     outDir: 'dist'
   },
   plugins: [tailwindcss()],
 });
