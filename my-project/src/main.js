@@ -46,7 +46,20 @@ const data = {
       img: "images/parque-aereo.jpg",
       link: "https://maps.google.com?q=Parque+Aéreo+Tandil",
       label: "Volar entre los árboles"
-    }
+    },
+    {
+      name: "Sierra del Tigre",
+      img: "images/sierra_tigre.jpg",
+      link: "https://maps.google.com?q=Sierra+del+Tigre+Tandil",
+      label: "Cuidado con los burros"
+    },
+    {
+      name: "Cascada",
+      img: "images/cascada.jpg",
+      link: "https://maps.app.goo.gl/s84UwvUumAuQRbG28",
+      label: "Si llueve hay cascada!"
+    },
+
   ],
   "Salamines": [
     {
@@ -60,6 +73,17 @@ const data = {
       img: "images/syquet.jpg",
       link: "https://maps.google.com?q=Syquet+Tandil", 
       label: "Quesos y fiambres de calidad"
+    },   {
+      name: "Las Dinas",
+      img: "images/dinas.jpg",
+      link: "https://maps.app.goo.gl/DMHN6bpD8oGnegbD6",
+      label: "Buenos Salames"
+    },
+    {
+      name: "Supermercado Monarca",
+      img: "images/monarca.jpg",
+      link: "https://maps.app.goo.gl/F2h8DBDNFGumgTYV8",
+      label: "Supermercado con productos locales"
     }
   ],
   "Casa de Ari": [
