@@ -116,8 +116,8 @@ function createCard({ name, img, link, label }) {
           rel="noopener noreferrer"
           class="relative z-10 block w-full text-sm text-white font-semibold text-center bg-gradient-to-r from-emerald-300 via-green-300 to-lime-200 hover:from-emerald-400 hover:to-lime-300 py-2 px-4 rounded-md shadow-md transform transition-all duration-500 hover:shadow-lg hover:shadow-emerald-300/40 group-hover:scale-105 opacity-90 group-hover:opacity-100 overflow-hidden"
         >
-          <div class="absolute inset-0 bg-gradient-to-r from-lime-200 to-emerald-200 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
-          <span class="relative z-10">Google Maps</span>
+         <div class="absolute inset-0 bg-gradient-to-r from-lime-200 to-emerald-200 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
+<span class="relative z-10 text-green-800">Google Maps</span>
         </a>
       </div>
 
@@ -128,10 +128,6 @@ function createCard({ name, img, link, label }) {
 
   return div;
 }
-
-
-
-
 
 function createSection(title, places, iconSVG = '') {
   const section = document.createElement("section");
@@ -187,8 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// ⛔ Remove the previous main.appendChild(...) loop
-// ✅ Use this one instead to include icons
+
 const sectionIcons = {
   "Aire Libre": `
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shrub-icon lucide-shrub text-white">
@@ -218,6 +213,32 @@ const sectionIcons = {
     </svg>
   `
 };
+
+
+
+const header = document.createElement("header");
+header.id = "mainHeader";
+header.className = "fixed top-0 left-0 w-full z-50 backdrop-blur-lg";
+
+header.innerHTML = `
+  <div class="max-w-screen-xl mx-auto px-6 py-6 flex items-center justify-center sm:justify-start gap-6">
+    <div class="relative">
+      <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-emerald-400 via-green-500 to-lime-500 shadow-lg flex items-center justify-center transform rotate-12 hover:rotate-0 transition-transform duration-700">
+        <img src="/images/tandil.png" alt="Tandil" class="w-12 h-12" />
+      </div>
+      <div class="absolute -top-2 -right-2 w-5 h-5 bg-lime-400 rounded-full animate-ping"></div>
+    </div>
+    <div>
+      <h1 class="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-lime-600 bg-clip-text text-transparent">
+        Guía Rápida de Tandil
+      </h1>
+      <div class="h-1 w-24 bg-gradient-to-r from-emerald-400 to-lime-400 rounded-full mt-2 shadow" />
+    </div>
+  </div>
+`;
+
+document.body.insertBefore(header, document.body.firstChild);
+
 
 
 Object.entries(data).forEach(([sectionName, cards]) => {
