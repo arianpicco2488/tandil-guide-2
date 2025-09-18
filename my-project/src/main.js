@@ -19,6 +19,12 @@ const data = {
       label: "A las 11 los dinosaurios cobran vida"
     },
     {
+      name: "Paseo las animas",
+      img: "images/animas.jpg",
+      link: "https://maps.app.goo.gl/Jk9LciaeMP2iULU4A",
+      label: "Paseo sin subidas super tranquilo!"
+    },
+    {
       name: "Fuerte Independencia",
       img: "images/fuerte.jpg",
       link: "https://maps.google.com?q=Fuerte+Independencia",
